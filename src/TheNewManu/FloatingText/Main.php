@@ -41,6 +41,9 @@ class Main extends PluginBase {
         $string = str_replace("{player_max_health}", $player->getMaxHealth(), $string);
         $string = str_replace("{online_players}", count($this->getServer()->getOnlinePlayers()), $string);
         $string = str_replace("{online_max_players}", $this->getServer()->getMaxPlayers(), $string);
+        $string = str_replace("{topstr}", $faction->sendListOfTop10FactionsTo($player);
+        $string = str_replace("{topfacmoney}", $faction->sendListOfTop10RichestFactionsTo($player);
+        $string = str_replace("topvalue}", $faction->sendListOfTop10ValuedFactionsTo($player);                 
         return $string;
     }
     
